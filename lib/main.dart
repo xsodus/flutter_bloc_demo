@@ -1,13 +1,13 @@
-import 'package:cubit_test_app/counter_view.dart';
-import 'package:cubit_test_app/cubit/global_cubit.dart';
-import 'package:cubit_test_app/cubit/global_state.dart';
-import 'package:cubit_test_app/cubit/text_cubit.dart';
+import 'package:flutter_bloc_demo/counter_view.dart';
+import 'package:flutter_bloc_demo/cubit/global_cubit.dart';
+import 'package:flutter_bloc_demo/cubit/global_state.dart';
+import 'package:flutter_bloc_demo/cubit/text_cubit.dart';
 import 'package:flutter/material.dart';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-import 'package:cubit_test_app/counter_observer.dart';
-import 'package:cubit_test_app/cubit/counter_cubit.dart';
+import 'package:flutter_bloc_demo/counter_observer.dart';
+import 'package:flutter_bloc_demo/cubit/counter_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Bloc Demo',
       theme: ThemeData(
         // This is the theme of your application.
         //

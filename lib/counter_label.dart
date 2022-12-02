@@ -1,7 +1,7 @@
-import 'package:cubit_test_app/cubit/text_cubit.dart';
+import 'package:flutter_bloc_demo/cubit/text_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:cubit_test_app/cubit/counter_cubit.dart';
+import 'package:flutter_bloc_demo/cubit/counter_cubit.dart';
 import 'package:flutter/material.dart';
 
 class CounterLabel extends StatelessWidget{

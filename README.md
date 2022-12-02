@@ -1,4 +1,4 @@
-# cubit_test_app
+# flutter_bloc_demo
 
 A new Flutter project.
 
