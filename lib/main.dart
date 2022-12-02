@@ -1,7 +1,5 @@
-import 'package:flutter_bloc_demo/widget/counter_view.dart';
 import 'package:flutter_bloc_demo/cubit/global_cubit.dart';
 import 'package:flutter_bloc_demo/cubit/global_state.dart';
-import 'package:flutter_bloc_demo/cubit/text_cubit.dart';
 import 'package:flutter/material.dart';
 
 import 'package:bloc/bloc.dart';
