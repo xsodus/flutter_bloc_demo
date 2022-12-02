@@ -15,10 +15,9 @@ class CounterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final counterCubit = context.watch<CounterCubit>();
-    final textCubit = context.watch<TextCubit>();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutter Multi Bloc Provider \nCounter',textAlign: TextAlign.center,)),
+      appBar: AppBar(title: const Text('Flutter Bloc Provider \nCounter',textAlign: TextAlign.center,)),
       body: const Center(
           child:CounterLabel()
       ),
@@ -31,9 +30,6 @@ class CounterView extends StatelessWidget {
             child: const Icon(Icons.add),
             onPressed: () {
                 counterCubit.increment();
-                if(counterCubit.state != 0){
-                  textCubit.updateText("Counter value");
-                }
               },
           ),
           const SizedBox(height: 8),
@@ -42,9 +38,6 @@ class CounterView extends StatelessWidget {
             child: const Icon(Icons.remove),
             onPressed: () {
                 counterCubit.decrement();
-                if(counterCubit.state != 0){
-                  textCubit.updateText("Counter value");
-                }
               },
           ),
         ],

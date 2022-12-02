@@ -10,13 +10,10 @@ class CounterLabel extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     final counterCubit = context.select((CounterCubit cubit) => cubit.state);
-    final textCubit = context.select((TextCubit cubit) => cubit.state);
     final textTheme = Theme.of(context).textTheme;
 
     // Bloc Provider
-    //return Text('Current value $counterCubit', style: textTheme.headline2);
-
-    return Text('$textCubit $counterCubit', style: textTheme.headline2);
+    return Text('Current value $counterCubit', style: textTheme.headline4);
   }
 
 }

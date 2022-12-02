@@ -16,19 +16,6 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //return BlocProvider(create: (_) => CounterCubit(), child: const CounterView());
-    // MultiBlocProvider
-    return MultiBlocProvider(
-        providers: [
-          BlocProvider(
-            create: (_) => CounterCubit(),
-          ),
-          BlocProvider(
-            create: (_) => TextCubit(),
-          )
-        ],
-
-        child: const CounterView()
-    );
+    return BlocProvider(create: (_) => CounterCubit(), child: const CounterView());
   }
 }
